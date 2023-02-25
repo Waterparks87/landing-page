@@ -15,6 +15,7 @@ body {
 
 header {
     position: sticky; top: 0;
+    width: 100%;
     height: 30px;
     background-color: black;
     display: flex;
@@ -24,6 +25,7 @@ header {
 
 ul {
     display: flex;
+    font-size: 12px;
     list-style-type: none;
     gap: 20px;
     align-items: center;
@@ -43,25 +45,26 @@ main {
     flex-wrap: wrap;
 }
 
-svg{
+.logo {
+    display: flex;
     height: 20px;
 }
 
 .hero-img {
     height: auto;
-  width: 400px;
+  width: 500px;
   padding-left: 100px;
 }
 
 .content-left {
+    display: flex;
+    flex-direction: column;
     width: 30%;
-
-
 }
 
 main h1 {
     font-size: 54px;
-    color: black;
+    color: darkgray;
     font-weight: 50;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -86,18 +89,97 @@ main p {
 
 .about-container {
     display: flex;
+    flex-wrap:wrap;
     justify-content: center;
     align-items: center;
     background-color: lightgray;
+    color: black;
     height: calc(100vh - 30px);
 }
 
 .about-left {
-    width: 30%
+    width: 30%;
+}
+
+.about-container h1 {
+    font-size: 54px;
+    font-weight: 50;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 2px;
+
+}
+.about-container h2 {
+    font-style: italic;
+    font-weight: 50;
+    margin-bottom: 25px;
+
+}
+
+.about-container p {
+    margin-top: 10px;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 25px;
+}
+
+.portfolio-container {
+    margin-top: auto;
+    display: flex;
+    height: calc(100vh - 30px);
+    align-items: center;
+    justify-content: center;
+    color: darkgray;
+    flex-wrap: wrap;
+}
+.portfolio-right {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    width: 600px;
+
+}
+
+.portfolio-container h1 {
+    font-size: 54px;
+    font-weight: 50;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 2px;
+
+}
+.portfolio-container h2 {
+    font-style: italic;
+    font-weight: 50;
+    margin-bottom: 25px;
+
+}
+
+.portfolio-container p {
+    margin-top: 10px;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 25px;
 }
 
 footer {
-    height: 250px;
+    height: 350px;
     background-color: black;
+    color: white;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-right {
+    display: flex;
+}
+
+footer svg {
+    height: 100px
 }
