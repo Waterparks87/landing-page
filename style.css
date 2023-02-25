@@ -6,12 +6,13 @@
     font-weight: lighter
     }
 
-
 body {
 
     display: flex;
     flex-direction: column;
 }
+
+/*HEADER SECTION*/
 
 header {
     position: sticky; top: 0;
@@ -29,13 +30,19 @@ ul {
     list-style-type: none;
     gap: 20px;
     align-items: center;
-    
 }
 
-a {
+ul li a {
     text-decoration: 0;
     color:white;
 }
+
+.logo {
+    display: flex;
+    height: 20px;
+}
+
+/*MAIN SECTION*/
 
 main {
     display: flex;
@@ -43,11 +50,6 @@ main {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-}
-
-.logo {
-    display: flex;
-    height: 20px;
 }
 
 .hero-img {
@@ -86,6 +88,7 @@ main p {
     color: darkgray;
     line-height: 25px;
 }
+/*ABOUT SECTION*/
 
 .about-container {
     display: flex;
@@ -107,13 +110,11 @@ main p {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 2px;
-
 }
 .about-container h2 {
     font-style: italic;
     font-weight: 50;
     margin-bottom: 25px;
-
 }
 
 .about-container p {
@@ -122,6 +123,8 @@ main p {
     font-style: italic;
     line-height: 25px;
 }
+
+/*PORTFOLIO SECTION*/
 
 .portfolio-container {
     margin-top: auto;
@@ -132,12 +135,19 @@ main p {
     color: darkgray;
     flex-wrap: wrap;
 }
+
+.portfolio-left {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 600px;
+    padding-right: 100px;
+}
+
 .portfolio-right {
     display: flex;
     flex-direction: column;
-    padding-left: 100px;
-    width: 600px;
-
+    width: 30%;
 }
 
 .portfolio-container h1 {
@@ -146,7 +156,6 @@ main p {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 2px;
-
 }
 .portfolio-container h2 {
     font-style: italic;
@@ -161,6 +170,19 @@ main p {
     font-style: italic;
     line-height: 25px;
 }
+
+.languages-container {
+    margin-top: 50px;
+    display: flex;
+    gap: 10px;
+}
+
+.languages {
+    height: 100px;
+    width: auto;
+}
+
+/*FOOTER SECTION*/
 
 footer {
     height: 350px;
