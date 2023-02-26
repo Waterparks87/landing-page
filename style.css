@@ -95,8 +95,7 @@ main p {
     flex-wrap:wrap;
     justify-content: center;
     align-items: center;
-    background-color: lightgray;
-    color: black;
+    color: darkgray;
     height: calc(100vh - 30px);
 }
 
