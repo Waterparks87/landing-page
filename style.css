@@ -10,6 +10,7 @@ body {
 
     display: flex;
     flex-direction: column;
+
 }
 
 /*HEADER SECTION*/
@@ -53,19 +54,26 @@ main {
 }
 
 .hero-img {
-    height: auto;
-    width: 500px;
-    padding-left: 50px;
+    height: 380px;
+    width: auto;
 }
 
-.content-left {
+.content-right {
     display: flex;
     flex-direction: column;
     max-width: 500px;
+    padding-left: 50px;
+}
+.content-left {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
 }
 
 main h1 {
-    font-size: 54px;
+    font-size: 45px;
     color: darkgray;
     font-weight: 50;
     text-transform: uppercase;
@@ -103,6 +111,14 @@ main p {
     max-width: 500px;
 }
 
+.about-right {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 50px;
+}
+
 .about-container h1 {
     font-size: 54px;
     font-weight: 50;
@@ -138,9 +154,8 @@ main p {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    width: 600px;
-    padding-right: 50px;
+    justify-content: flex-start;
+    width: 500px;
     gap: 20px;
 }
 
@@ -150,6 +165,7 @@ main p {
     justify-content: flex-start;
     max-width: 500px;
     height: 420px;
+    padding-left: 50px;
 }
 
 .portfolio-right h1 {
@@ -245,6 +261,11 @@ footer {
     width: 500px;
     height: 100%;
  
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }
 
 .footer-right p {
